@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu portifolio
+    </title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Rafael Antunes</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Rafael Antunes</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./img/eu.jpeg" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Oi, Eu Sou</p>
+        <h1 class="title">Rafael Antunes</h1>
+        <p class="section__text__p2">Aprediz de Programação</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./img/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./img/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Antunes22rj'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Conheça mais</p>
+      <h1 class="title">Sobre Mim</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./img/eu.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./img/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experiencia</h3>
+              <p>5 meses<br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./img/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Educação</h3>
+              <p>Universidade de Vassouas</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                É um aprendiz de programação dedicado, que está começando a jornada de aprender a arte de escrever código e desenvolver software. iniciou seus estudos com fundamentos básicos de lógica de programação e algoritmos, e está aprendendo linguagens de programação como Python, Java, ou JavaScript. Durante seu aprendizado, está desenvolvendo habilidades em resolução de problemas, pensamento crítico e criativo.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./img/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explorar Minha</p>
+      <h1 class="title">Experiência</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experiência</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experiência</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./img/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Phython</h3>
+                  <p>Basico</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+         
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Meus Recentes</p>
+      <h1 class="title">Projetos</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+        
+            </div>
+            <h2 class="experience-sub-title project-title">Projeto um</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://antunes22rj.github.io/Curriculoantunes2/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://antunes22rj.github.io/Curriculoantunes2/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+            </div>
+            <h2 class="experience-sub-title project-title">Projeto 2</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://antunes22rj.github.io/CafeteriaCafena//'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://antunes22rj.github.io/CafeteriaCafena/"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+            </div>
+            <h2 class="experience-sub-title project-title">Project 3 </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://antunes22rj.github.io/A-a-DoSeuZ-/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://antunes22rj.github.io/A-a-DoSeuZ-/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="details-container color-container">
+        <div class="article-container">
+        </div>
+        <h2 class="experience-sub-title project-title">Project 4 </h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://antunes22rj.github.io/Hamburgueria/'"
+          >
+            Github
+          </button>
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="location.href='https://antunes22rj.github.io/Hamburgueria/'"
+          >
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="details-container color-container">
+    <div class="article-container">
+    </div>
+    <h2 class="experience-sub-title project-title">Project 5 </h2>
+    <div class="btn-container">
+      <button
+        class="btn btn-color-2 project-btn"
+        onclick="location.href='https://antunes22rj.github.io/cantor/'"
+      >
+        Github
+      </button>
+      <button
+        class="btn btn-color-2 project-btn"
+        onclick="location.href='https://antunes22rj.github.io/cantor/'"
+      >
+        Live Demo
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="details-container color-container">
+  <div class="article-container">
+  </div>
+  <h2 class="experience-sub-title project-title">Project 6 </h2>
+  <div class="btn-container">
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://antunes22rj.github.io/Temperatura/'"
+    >
+      Github
+    </button>
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https:https://antunes22rj.github.io/Temperatura/'"
+    >
+      Live Demo
+    </button>
+  </div>
+</div>
+</div>
+</div>
+<div class="details-container color-container">
+  <div class="article-container">
+  </div>
+  <h2 class="experience-sub-title project-title">Project 7 </h2>
+  <div class="btn-container">
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://antunes22rj.github.io/contador-de-palavras/'"
+    >
+      Github
+    </button>
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://antunes22rj.github.io/contador-de-palavras/'"
+    >
+      Live Demo
+    </button>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="details-container color-container">
+  <div class="article-container">
+  </div>
+  <h2 class="experience-sub-title project-title">Project 8 </h2>
+  <div class="btn-container">
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://antunes22rj.github.io/Relogio-Digital/'"
+    >
+      Github
+    </button>
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://antunes22rj.github.io/Relogio-Digital/'"
+    >
+      Live Demo
+    </button>
+  </div>
+</div>
+</div>
+</div>
+<div class="details-container color-container">
+  <div class="article-container">
+  </div>
+  <h2 class="experience-sub-title project-title">Project 9 </h2>
+  <div class="btn-container">
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://antunes22rj.github.io/lista-de-tarefa/'"
+    >
+      Github
+    </button>
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://antunes22rj.github.io/lista-de-tarefa/'"
+    >
+      Live Demo
+    </button>
+  </div>
+</div>
+</div>
+</div>
+<div class="details-container color-container">
+  <div class="article-container">
+  </div>
+  <h2 class="experience-sub-title project-title">Project 10 </h2>
+  <div class="btn-container">
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://antunes22rj.github.io/loja-virtual/'"
+    >
+      Github
+    </button>
+    <button
+      class="btn btn-color-2 project-btn"
+      onclick="location.href='https://antunes22rj.github.io/loja-virtual/'"
+    >
+      Live Demo
+    </button>
+ 
+ 
+ </body>
+</html>
